@@ -1,0 +1,5 @@
+.env
+chroma-db
+Document loaders
+retrievers
+Vector Store

@@ -1,0 +1,23 @@
+# --- Orchestration Framework ---
+langchain
+langchain-core
+langchain-community
+
+# --- Model Integrations ---
+openai
+langchain-openai
+mistralai
+langchain-mistralai
+tiktoken
+
+# --- Vector Database ---
+chromadb
+
+# --- Document Loaders & Utilities (The "multiple other stuff") ---
+pypdf
+beautifulsoup4
+python-dotenv
+
+streamlit
+
+langchain-huggingface
