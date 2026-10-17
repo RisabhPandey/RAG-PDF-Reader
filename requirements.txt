@@ -1,23 +1,26 @@
-# --- Orchestration Framework ---
+```txt
+streamlit
+python-dotenv
+
+# LangChain
 langchain
 langchain-core
 langchain-community
-
-# --- Model Integrations ---
-openai
-langchain-openai
-mistralai
+langchain-text-splitters
+langchain-huggingface
 langchain-mistralai
-tiktoken
 
-# --- Vector Database ---
+# PDF Processing
+pypdf
+
+# Vector Database
 chromadb
 
-# --- Document Loaders & Utilities (The "multiple other stuff") ---
-pypdf
-beautifulsoup4
-python-dotenv
+# Embeddings
+sentence-transformers
+transformers
+torch
 
-streamlit
-
-langchain-huggingface
+# Utilities
+numpy
+```
