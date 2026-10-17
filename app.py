@@ -90,8 +90,27 @@ html, body, [class*="css"], .stApp {{ font-family: 'Inter', sans-serif; }}
 .stApp {{ background: {t['bg']}; background-attachment: fixed; color: {t['text']}; }}
 
 /* hide Streamlit chrome but keep the sidebar toggle usable */
-#MainMenu, footer, [data-testid="stToolbar"], [data-testid="stDecoration"] {{ visibility: hidden; }}
+#MainMenu, footer, [data-testid="stDecoration"],
+[data-testid="stToolbarActions"], [data-testid="stAppDeployButton"], [data-testid="stMainMenu"] {{ display: none !important; }}
 header[data-testid="stHeader"] {{ background: transparent; }}
+
+/* always keep the sidebar open/close toggle visible (covers old and new Streamlit versions) */
+[data-testid="stExpandSidebarButton"],
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="collapsedControl"],
+[data-testid="stSidebarCollapseButton"],
+[data-testid="stSidebarHeader"] button {{
+    visibility: visible !important;
+    display: flex !important;
+    opacity: 1 !important;
+    z-index: 999991;
+}}
+[data-testid="stExpandSidebarButton"] button,
+[data-testid="stSidebarCollapsedControl"] button,
+[data-testid="collapsedControl"] button {{
+    background: linear-gradient(90deg, #7c3aed, #4f46e5) !important;
+    color: #fff !important; border-radius: 10px !important;
+}}
 
 .block-container {{ padding-top: 1.5rem; max-width: 1200px; }}
 
