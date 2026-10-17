@@ -1,29 +1,27 @@
-```txt
-# --- Web Application ---
+# Web Application
 streamlit
 
-# --- Orchestration Framework ---
+# LangChain Framework
 langchain
 langchain-core
 langchain-community
 langchain-text-splitters
 
-# --- Model Integrations ---
+# Model Integrations
 mistralai
 langchain-mistralai
 openai
 langchain-openai
 tiktoken
 
-# --- Embeddings ---
+# Embeddings
 langchain-huggingface
 sentence-transformers
 
-# --- Vector Database ---
+# Vector Database
 chromadb
 
-# --- Document Loaders & Utilities ---
+# Document Processing
 pypdf
 beautifulsoup4
 python-dotenv
-```
